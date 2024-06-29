@@ -1,0 +1,28 @@
+{
+	"name": "wrangler-test",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.1.19",
+		"@cloudflare/workers-types": "^4.20240620.0",
+		"@types/bun": "^1.1.6",
+		"typescript": "^5.5.2",
+		"vitest": "1.3.0",
+		"wrangler": "^3.62.0"
+	},
+	"dependencies": {
+		"@henrygd/semaphore": "^0.0.1",
+		"@shopify/semaphore": "^3.1.0",
+		"async-mutex": "^0.5.0",
+		"async-sema": "^3.1.1",
+		"await-semaphore": "^0.1.3"
+	}
+}
